@@ -1,0 +1,116 @@
+/* #app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+} */
+
+/* Site */
+
+body {
+  box-sizing: border-box;
+  --brand-color: #6534FF;
+  --display-font: 'Montserrat', sans-serif;
+  --text-font: 'Lora', serif;
+  font-family: var(--text-font);
+  width: 1922px;
+  margin: 0 auto;
+}
+h1, h2, h3 {
+  font-family: var(--display-font);
+}
+h1, h2 {
+  font-weight: 700;
+}
+h3 {
+  font-weight: 600;
+}
+
+/* Components */
+/* Header */
+header {
+  text-align: center;
+  background: center contain no-repeat;
+  background-image: url(img/workgroup.jpeg);
+  background-color: rgba(10, 10, 10, .4);
+  background-blend-mode: multiply;
+  color: white;
+  height: 1082px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav {
+  border-bottom: 4px solid rgba(255,255,255,0.1);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+li {
+  padding: 1rem;
+}
+.title {
+  align-self: center;
+}
+button {
+  text-transform: uppercase;
+  background-color: white;
+  color: black;
+}
+button:last-child {
+  background-color: var(--brand-color);
+  color: white;
+}
+address {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 2rem;
+}
+
+/* Portfolio */
+.portfolio {
+  text-align: center;
+}
+.intro {
+  margin: 0 auto;
+  width: 40%;
+}
+.portfolio ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 483px;
+}
+.tallpic {
+  grid-row-start: 1;
+  grid-row-end: span 2;
+}
+
+/* Services */
+
+/* Our Team */
+
+/* Testimonials */
+
+/* CTA */
+
+/* Footer */
