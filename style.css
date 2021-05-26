@@ -20,6 +20,7 @@ body {
 }
 h1, h2, h3 {
   font-family: var(--display-font);
+  color: #3E3E3E;
 }
 h1, h2 {
   font-weight: 700;
@@ -106,6 +107,25 @@ address {
 }
 
 /* Services */
+.services {
+  background-color: #222222;
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+.services h3 {
+  color: white;
+  text-transform: uppercase;
+}
+.services p {
+  color: #9A9A9A;
+}
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: var(--brand-color);
+}
 
 /* Our Team */
 
