@@ -20,13 +20,24 @@ body {
 }
 h1, h2, h3 {
   font-family: var(--display-font);
-  color: #3E3E3E;
 }
-h1, h2 {
+h1 {
   font-weight: 700;
+  color: white;
+}
+h2 {
+  font-weight: 700;
+  color: #3E3E3E;
 }
 h3 {
   font-weight: 600;
+  color: #3E3E3E;
+}
+/* This is repeated among a few different components */
+.intro {
+  margin: 0 auto;
+  padding: 3rem;
+  width: 25%;
 }
 
 /* Components */
@@ -43,11 +54,9 @@ header {
   flex-direction: column;
   justify-content: space-between;
 }
-
 nav {
   border-bottom: 4px solid rgba(255,255,255,0.1);
 }
-
 nav ul {
   display: flex;
   list-style: none;
@@ -84,10 +93,6 @@ address {
 .portfolio {
   text-align: center;
 }
-.intro {
-  margin: 0 auto;
-  width: 40%;
-}
 .portfolio ul {
   display: flex;
   list-style: none;
@@ -95,6 +100,7 @@ address {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   text-transform: uppercase;
+  padding-bottom: 1rem;
 }
 .gallery {
   display: grid;
@@ -107,12 +113,18 @@ address {
 }
 
 /* Services */
-.services {
+.services-wrapper {
   background-color: #222222;
+  
+}
+.services {
   display: grid;
   grid: auto-flow / 1fr 1fr 1fr;
-  gap: 2rem;
-  padding: 2rem 3rem;
+  gap: 5rem;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 .services h3 {
   color: white;
@@ -125,11 +137,22 @@ address {
   width: 50px;
   height: 50px;
   background-color: var(--brand-color);
+  margin-bottom: 3rem;
 }
 
 /* Our Team */
+.team {
+  text-align: center;
+}
 
 /* Testimonials */
+.testimonials {
+  text-align: center;
+}
+.teampics {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 
 /* CTA */
 
