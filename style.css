@@ -153,17 +153,17 @@ address {
 }
 
 /* Services */
-.services-wrapper {
+.s-wrapper {
   background-color: var(--verydarkgray);
 }
 .services {
   display: grid;
   grid: auto-flow / 1fr 1fr 1fr;
   gap: 5rem;
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 7.625rem;
+  padding-bottom: 7.625rem;
 }
 .services h3 {
   color: white;
@@ -190,16 +190,43 @@ address {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.team figure {
+  margin: 0;
+}
+.team figcaption {
+  background-color: rgba(101, 52, 255, 1);
+  height: 26.375rem;
+  width: 26.375rem;
+  /* Purple boxes are styled but currently hidden */
+  display: none;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+}
+.teamname {
+  font-family: var(--display-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
 /* Testimonials */
+.t-wrapper {
+  background-color: #F7F7F7;
+}
+.testimonials {
+  margin: 0 auto;
+}
 .quotesblock {
   display: grid;
   grid: auto-flow / 1fr 1fr;
   gap: 5rem;
   width: 60%;
   margin: 0 auto;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   color: var(--dark-color);
 }
 blockquote {
@@ -239,6 +266,7 @@ blockquote {
 }
 .cta h2 {
   color: white;
+  margin-bottom: 1.25rem;
 }
 .cta button {
   background-color: white;
@@ -253,7 +281,7 @@ footer {
   color: white;
   font-size: 1rem;
   display: grid;
-  grid-template-columns: 1fr .75fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 70%;
   margin: 0 auto;
   padding-top: 4.75rem;
@@ -263,6 +291,8 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 1.625rem;
+  margin: 2rem;
 }
 .footernav {
   list-style: none;
@@ -271,6 +301,7 @@ footer {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 1.75rem;
+  margin-left: 3rem;
 }
 .footernav li {
   padding: 0;
@@ -308,7 +339,7 @@ footer address {
   background-color: white;
   margin: 0 auto;
 }
-.cwrapper {
+.c-wrapper {
   background-color: #1C1C1C;
 }
 .copyright {
