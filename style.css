@@ -124,6 +124,9 @@ address {
   letter-spacing: 2.4px;
   padding-bottom: 1rem;
 }
+.portfolio a:active {
+  color: var(--brand-color);
+}
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -150,9 +153,12 @@ address {
 .services h3 {
   color: white;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .services p {
   color: #9A9A9A;
+  font-size: 16px;
+  line-height: 30px;
 }
 .square {
   width: 50px;
@@ -179,9 +185,12 @@ address {
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  color: #3E3E3E;
 }
 blockquote {
   margin: 0;
+  font-size: 18px;
+  line-height: 32px;
 }
 .quotename {
   text-transform: uppercase;
@@ -216,7 +225,7 @@ footer {
 }
 .footerblock {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr .75fr 1fr 1fr;
   width: 70%;
   margin: 0 auto;
   padding-top: 76px;
@@ -278,12 +287,16 @@ footer address {
   background-color: white;
   margin: 0 auto;
 }
+.cwrapper {
+  background-color: #1C1C1C;
+}
 .copyright {
   /* written #525252, pick an accessible color */
   color: #525252;
-  background-color: #1C1C1C;
   height: 79px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 70%;
+  margin: 0 auto;
 }
