@@ -12,9 +12,13 @@
 body {
   box-sizing: border-box;
   --brand-color: #6534FF;
+  --brand-shadow: rgba(101, 52, 255, 0.3);
+  --darkgray: #3E3E3E;
+  --verydarkgray: #222222;
   --display-font: 'Montserrat', sans-serif;
   --text-font: 'Lora', serif;
   font-family: var(--text-font);
+  font-size: 1.25rem;
   width: 1922px;
   margin: 0 auto;
 }
@@ -24,16 +28,33 @@ h1, h2, h3 {
 h1 {
   font-weight: 700;
   color: white;
-  font-size: 70px;
+  font-size: 4.375rem;
 }
 h2 {
   font-weight: 700;
-  color: #3E3E3E;
-  font-size: 40px;
+  color: var(--darkgray);
+  font-size: 2.5rem;
 }
 h3 {
   font-weight: 600;
-  color: #3E3E3E;
+  color: var(--darkgray);
+}
+button {
+  text-transform: uppercase;
+  background-color: white;
+  color: var(--verydarkgray);
+  text-size: 1.06rem;
+  letter-spacing: 0.2625rem;
+  height: 3.9375rem;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+button:last-child {
+  background-color: var(--brand-color);
+  color: white;
+  box-shadow: 0px 625rem 1.25rem var(--brand-shadow);
 }
 /* This is repeated among a few different components */
 .intro {
@@ -41,11 +62,20 @@ h3 {
   padding: 3rem;
   width: 35%;
   text-align: center;
-  line-height: 35px;
+  line-height: 2.1875rem;
 }
 .intro p {
-  font-size: 20px;
   color: #4B4B4B;
+}
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
 
 /* Components */
@@ -57,7 +87,7 @@ header {
   background-color: rgba(10, 10, 10, .4);
   background-blend-mode: multiply;
   color: white;
-  height: 1082px;
+  height: 67.625rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +102,7 @@ nav ul {
   font-family: var(--display-font);
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.8125rem;
 }
 li {
   padding: 1rem;
@@ -81,24 +111,8 @@ li {
   align-self: center;
 }
 .title p {
-  font-size: 22px;
-  margin: 42px;
-}
-button {
-  text-transform: uppercase;
-  background-color: white;
-  color: black;
-  text-size: 15px;
-  letter-spacing: 4.2px;
-  height: 45px;
-  margin: 0 15px;
-  padding: 15px 30px;
-  border-radius: 30px;
-}
-button:last-child {
-  background-color: var(--brand-color);
-  color: white;
-  box-shadow: 0px 10px 20px rgba(101, 52, 255, 0.3);
+  font-size: 1.375rem;
+  margin: 2.625rem 0;
 }
 address {
   display: flex;
@@ -106,7 +120,8 @@ address {
   font-family: var(--display-font);
   font-weight: 400;
   font-style: normal;
-  margin: 50px 76px;
+  font-size: 1rem;
+  margin: 3.375rem 4.75rem;
 }
 
 /* Portfolio */
@@ -120,8 +135,8 @@ address {
   font-family: var(--display-font);
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 2.4px;
+  font-size: 0.75rem;
+  letter-spacing: 0.15rem;
   padding-bottom: 1rem;
 }
 .portfolio a:active {
@@ -130,7 +145,7 @@ address {
 .gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 483px;
+  grid-template-rows: 30rem;
 }
 .tallpic {
   grid-row-start: 1;
@@ -139,7 +154,7 @@ address {
 
 /* Services */
 .services-wrapper {
-  background-color: #222222;
+  background-color: var(--verydarkgray);
 }
 .services {
   display: grid;
@@ -153,16 +168,16 @@ address {
 .services h3 {
   color: white;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: .25rem;
 }
 .services p {
   color: #9A9A9A;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.875rem;
 }
 .square {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  height: 3rem;
   background-color: var(--brand-color);
   margin-bottom: 3rem;
 }
@@ -185,12 +200,12 @@ address {
   margin: 0 auto;
   padding-top: 10rem;
   padding-bottom: 10rem;
-  color: #3E3E3E;
+  color: var(--dark-color);
 }
 blockquote {
   margin: 0;
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
 }
 .quotename {
   text-transform: uppercase;
@@ -200,12 +215,24 @@ blockquote {
 .quotetitle {
   font-style: italic;
 }
+/* Logos */
+.logos {
+  display: grid;
+  justify-items: center;
+  padding: 73px 0;
+  grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+}
+.logos div {
+  height: 4.5rem;
+  width: 4.5rem;
+  background-color: lightgray;
+}
 
 /* CTA */
 .cta {
   text-align: center;
   background-color: var(--brand-color);
-  height: 253px;
+  height: 15.8125rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,21 +242,22 @@ blockquote {
 }
 .cta button {
   background-color: white;
-  color: #222222;
+  color: var(--verydarkgray);
 }
 
 /* Footer */
 footer {
-  background-color: #222222;
-  color: white;
+  background-color: var(--verydarkgray);
 }
 .footerblock {
+  color: white;
+  font-size: 1rem;
   display: grid;
   grid-template-columns: 1fr .75fr 1fr 1fr;
   width: 70%;
   margin: 0 auto;
-  padding-top: 76px;
-  padding-bottom: 76px;
+  padding-top: 4.75rem;
+  padding-bottom: 4.75rem;
 }
 .summary {
   display: flex;
@@ -241,49 +269,42 @@ footer {
   text-transform: uppercase;
   font-family: var(--display-font);
   font-weight: 400;
+  font-size: 0.8125rem;
+  line-height: 1.75rem;
 }
 .footernav li {
-  padding: 13px;
+  padding: 0;
 }
 footer address {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin: 0;
 }
 .subscribe {
-  font-size: 20px;
-}
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
+  font-size: 1.25rem;
+  margin: 0;
 }
 #email {
-  font-size: 16px;
-  padding: 16px 33px 16px 33px;
+  font-size: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   margin: 0;
-  /* display: inline; */
-  border-radius: 30px 0 0 30px;
+  border-radius: 2rem 0 0 2rem;
 }
 #email::placeholder {
   color: #8A8A8A;
   font-family: var(--text-font)
 }
-#emailsubmit {
-  height: 64px;
-  width: 64px;
+#emailbutton {
+  height: 3rem;
+  width: 3rem;
   margin: 0;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 2rem 2rem 0;
   /* display: inline; */
 }
 #icon {
-  height: 25px;
-  width: 25px;
+  height: 1rem;
+  width: 1rem;
   background-color: white;
   margin: 0 auto;
 }
@@ -292,8 +313,8 @@ footer address {
 }
 .copyright {
   /* written #525252, pick an accessible color */
-  color: #525252;
-  height: 79px;
+  color: gray;
+  height: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
