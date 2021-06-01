@@ -313,10 +313,18 @@ footer address {
   margin: 0;
 }
 .subscribe {
+  padding: 1em;
   font-size: 1.25rem;
   margin: 0;
 }
+#emailbox {
+  display: flex;
+  align-items: stretch;
+}
 #email {
+  flex: 0 1 100%;
+  display: block;
+  border-width: 0;
   font-size: 1rem;
   padding: 1rem 2rem 1rem 2rem;
   margin: 0;
@@ -327,11 +335,12 @@ footer address {
   font-family: var(--text-font)
 }
 #emailbutton {
-  height: 3rem;
-  width: 3rem;
+  flex: 0 0 3em;
+  display: block;
+  background-color: #6534FF;
   margin: 0;
+  border-width: 0;
   border-radius: 0 2rem 2rem 0;
-  /* display: inline; */
 }
 #icon {
   height: 1rem;
@@ -343,7 +352,7 @@ footer address {
   background-color: #1C1C1C;
 }
 .copyright {
-  /* written #525252, pick an accessible color */
+  /* written #525252, replaced with an accessible color */
   color: gray;
   height: 5rem;
   display: flex;
