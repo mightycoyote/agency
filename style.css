@@ -1,12 +1,3 @@
-/* #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-} */
-
 /* Site */
 
 body {
@@ -45,7 +36,7 @@ button {
   color: var(--verydarkgray);
   font-family: var(--display-font);
   font-weight: 700;
-  text-size: 1rem;
+  font-size: 1rem;
   letter-spacing: 0.2625rem;
   height: 3.9375rem;
   margin: 1rem;
@@ -396,6 +387,7 @@ footer address {
   margin: 0;
   border-width: 0;
   border-radius: 0 2rem 2rem 0;
+  box-shadow: none;
 }
 #icon {
   height: 1rem;
@@ -414,7 +406,7 @@ footer address {
 }
 .copyright {
   /* written #525252, replaced with an accessible color */
-  color: gray;
+  color: #DEDEDE;
   height: 5rem;
   display: flex;
   flex-direction: column;
