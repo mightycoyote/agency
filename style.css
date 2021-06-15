@@ -29,6 +29,7 @@ h2 {
 h3 {
   font-weight: 600;
   color: var(--darkgray);
+  font-size: 1.25rem;
 }
 button {
   text-transform: uppercase;
